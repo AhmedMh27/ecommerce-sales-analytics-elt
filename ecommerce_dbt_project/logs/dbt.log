@@ -1,0 +1,75 @@
+[0m19:21:30.282452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F41AF9D550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F418B60CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F41D92F890>]}
+
+
+============================== 19:21:30.384583 | 9234763f-3c56-4dc0-9d42-c5f0ce045bc7 ==============================
+[0m19:21:30.384583 [info ] [MainThread]: Running with dbt=1.12.7
+[0m19:21:30.385483 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\pc\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init ecommerce_analytics', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m19:21:30.439590 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\pc\.dbt
+[0m19:21:30.445023 [debug] [MainThread]: Starter project path: E:\E-Commerce Sales Analytics\.venv\Lib\site-packages\dbt\include\starter_project
+[0m19:21:30.551884 [info ] [MainThread]: Setting up your profile.
+[0m19:23:36.710584 [info ] [MainThread]: Profile ecommerce_analytics written to C:\Users\pc\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m19:23:36.729084 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m19:23:36.730485 [info ] [MainThread]: dbt version: 1.12.7
+[0m19:23:36.731254 [info ] [MainThread]: python version: 3.14.7
+[0m19:23:36.731762 [info ] [MainThread]: python path: E:\E-Commerce Sales Analytics\.venv\Scripts\python.exe
+[0m19:23:36.732193 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m19:23:36.923196 [info ] [MainThread]: Using profiles dir at C:\Users\pc\.dbt
+[0m19:23:36.923851 [info ] [MainThread]: Using profiles.yml file at C:\Users\pc\.dbt\profiles.yml
+[0m19:23:36.924337 [info ] [MainThread]: Using dbt_project.yml file at E:\E-Commerce Sales Analytics\ecommerce_dbt_project\ecommerce_analytics\dbt_project.yml
+[0m19:23:36.945689 [info ] [MainThread]: adapter type: duckdb
+[0m19:23:36.946300 [info ] [MainThread]: adapter version: 1.11.1
+[0m19:23:37.129852 [info ] [MainThread]: Configuration:
+[0m19:23:37.131105 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:23:37.132158 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:23:37.132688 [info ] [MainThread]: Required dependencies:
+[0m19:23:37.133169 [debug] [MainThread]: Executing "git --help"
+[0m19:23:37.199609 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m19:23:37.200182 [info ] [MainThread]: Connection:
+[0m19:23:37.200626 [info ] [MainThread]:   database: dev
+[0m19:23:37.201035 [info ] [MainThread]:   schema: main
+[0m19:23:37.201440 [info ] [MainThread]:   path: dev.duckdb
+[0m19:23:37.202428 [info ] [MainThread]:   config_options: None
+[0m19:23:37.203185 [info ] [MainThread]:   extensions: None
+[0m19:23:37.204809 [info ] [MainThread]:   settings: {}
+[0m19:23:37.205421 [info ] [MainThread]:   external_root: .
+[0m19:23:37.206194 [info ] [MainThread]:   use_credential_provider: None
+[0m19:23:37.206896 [info ] [MainThread]:   attach: None
+[0m19:23:37.207356 [info ] [MainThread]:   filesystems: None
+[0m19:23:37.207792 [info ] [MainThread]:   remote: None
+[0m19:23:37.208202 [info ] [MainThread]:   plugins: None
+[0m19:23:37.208647 [info ] [MainThread]:   disable_transactions: False
+[0m19:23:37.209347 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m19:23:37.650754 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m19:23:45.072066 [debug] [MainThread]: Using duckdb connection "debug"
+[0m19:23:45.074383 [debug] [MainThread]: On debug: select 1 as id
+[0m19:23:45.075600 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:23:46.654257 [debug] [MainThread]: SQL status: OK in 1.577 seconds
+[0m19:23:46.659282 [debug] [MainThread]: On debug: Close
+[0m19:23:46.660807 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:23:46.661506 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:23:46.662002 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m19:23:46.664523 [info ] [MainThread]: Your new dbt project "ecommerce_analytics" was created!
+Initialized new project in E:\E-Commerce Sales Analytics\ecommerce_dbt_project\ecommerce_analytics\ecommerce_analytics
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:23:46.665432 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m19:23:46.667219 [debug] [MainThread]: Command `dbt init` succeeded at 19:23:46.667016 after 136.99 seconds
+[0m19:23:46.667784 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:23:46.668406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F41D757BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F41DE8E7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F41DDFE360>]}
+[0m19:23:46.669582 [debug] [MainThread]: Flushing usage events
+[0m19:23:47.978166 [debug] [MainThread]: An error was encountered while trying to flush usage events
