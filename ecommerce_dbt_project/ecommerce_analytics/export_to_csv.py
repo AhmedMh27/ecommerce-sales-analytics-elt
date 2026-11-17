@@ -13,7 +13,7 @@ con.execute("""
         EXTRACT(MONTH FROM d) AS month_number,
         MONTHNAME(d) AS month,
         EXTRACT(QUARTER FROM d) AS quarter,
-        EXTRACT(DOW FROM d) AS day
+        EXTRACT(DOW FROM d) AS day  
     FROM generate_series(DATE '2024-01-01', DATE '2026-12-31', INTERVAL '1 day') t(d);
 """)
 

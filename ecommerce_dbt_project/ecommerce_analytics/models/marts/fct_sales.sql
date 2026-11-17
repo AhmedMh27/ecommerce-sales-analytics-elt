@@ -9,6 +9,6 @@ SELECT
     o.sales_amount,
     p.category,
     p.unit_price
-FROM {{ ref('stg_orders') }} o
-LEFT JOIN {{ ref('raw_products') }} p
+FROM {{ ref('stg_orders') }} AS o
+LEFT JOIN {{ ref('raw_products') }} AS p
     ON o.product_id = p.product_id
